@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numeric Input Validation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: rgb(26, 138, 182);
+    }
+    .error-message {
+      color: red;
+      margin-top: 5px;
+      padding: 50px;
+      
+      font-size: x-large;
+    }
+    h1{
+      color: rgb(12, 11, 15);
+      font-size: x-large;
+    }
+    label{
+      color: blue;
+    }
+    button{
+      background-color: rgb(4, 163, 150);
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <h1>FORM TWO WHICH REQUIRES NUMERIC NUMBERS ONLY</h1>
+
+  <form id="numericForm">
+    <label for="numericInput"><b>Enter a Number:</b></label>
+    <input type="text" id="numericInput" name="numericInput">
+    <div class="error-message" id="errorMessage"></div>
+    <br>
+    <button type="button" onclick="validateNumericInput()">Submit</button>
+  </form>
+
+  <script>
+    function validateNumericInput() {
+      var inputElement = document.getElementById('numericInput');
+      var errorMessageElement = document.getElementById('errorMessage');
+      
+      // Clear previous error message
+      errorMessageElement.textContent = '';
+
+      // Check if the input is a number
+      if (isNaN(inputElement.value)) {
+        errorMessageElement.textContent = 'Please enter a valid number.';
+      }
+    }
+  </script>
+
+</body>
+</html>

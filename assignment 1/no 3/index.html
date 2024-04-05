@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: rgb(135, 210, 222);
+            text-align: left; 
+            padding: 50px;  
+        }
+        h1{
+            color: blue;
+        }
+        button{
+            background-color: rgb(196, 6, 6);
+            color: black;
+        }
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Return first and last name from a form on Submit</title>
+  <link rel="stylesheet" href="/Number three Form.css">
+</head>
+<body>
+    <h1>The Java Script Form Returning the First and Last name</h1>
+
+  <form id="nameForm">
+    <label for="firstName"><b>First Name:</b></label>
+    <input type="text" id="firstName" name="firstName">
+    <br><br> <br><br>
+    <label for="lastName"><b>Last Name:</b></label>
+    <input type="text" id="lastName" name="lastName">
+    <br><br><br><br>
+    <button type="button" onclick="getFormValues()">Read Values</button>
+  </form>
+
+  <script>
+    function getFormValues() {
+      
+      var firstName = document.getElementById('firstName').value;
+      var lastName = document.getElementById('lastName').value;
+      alert('First Name: ' + firstName + '\nLast Name: ' + lastName);
+    }
+
+  </script>
+
+</body>
+</html

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>my on and off bulb code</h1>
+<button onclick="document.getElementById('myImage').src='2.png'">Turn on light</button>
+
+<img id="myImage" src="./realistic-light-bulb-isolated_1284-41741.jpg" style="width:200px">
+
+<button onclick="document.getElementById('myImage').src='realistic-lit-light-bulb-isolated_1284-41774.jpg'">Turn off the light</button><br><br>
+<h2 style="font-size: xx-large;">How to change font size  in Javascript</h2>
+<p id="demo1"></p>
+
+<p>The Lord is good</p>
+<p>Psalm 32:</p>
+
+<p id="demo2"></p>
+<script>
+    let text = "Hello Charlotte!";
+    let result = text.fontsize(6);
+    document.getElementById("demo1").innerHTML = result;
+    
+    result = "<span style='font-size:32px'>" + text + "</span>";
+    document.getElementById("demo2").innerHTML = result;
+    </script><br><br>
+<h3 style="font-size: xx-large;">How to hide an element in Javascript</h3>
+<div id="myDIV">
+    Asaaba Charlotte is a WITU student in cohort 3
+</div>
+
+<button onclick="myFunction()">click to hide</button>
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+
+
+
+
+
+</body>
+</html>
